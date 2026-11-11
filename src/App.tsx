@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 
 function ScrollToTop() {
@@ -19,6 +19,7 @@ function ScrollToTop() {
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppBubble from './components/WhatsAppBubble';
+import CanonicalManager from './components/CanonicalManager';
 
 // Pages
 import Home from './pages/Home';
@@ -58,7 +59,7 @@ function AnimatedRoutes() {
         <Routes location={location}>
           <Route path="/" element={<Home />} />
           <Route path="/engineering" element={<Engineering />} />
-          <Route path="/products" element={<Engineering />} />
+          <Route path="/products" element={<Navigate to="/engineering" replace />} />
           <Route path="/education" element={<Education />} />
           <Route path="/stem-education" element={<StemEducation />} />
           <Route path="/train-the-trainer" element={<TrainTheTrainer />} />
@@ -86,6 +87,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
+      <CanonicalManager />
       <div className="min-h-screen bg-black text-[#f5f2ed] font-sans selection:bg-[#b38b3f]/30">
         <Navbar />
         <AnimatedRoutes />
