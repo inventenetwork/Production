@@ -287,12 +287,20 @@ export default function Engineering() {
               </p>
             </div>
 
-            <Link 
-              to="/contact?pillar=Engineering"
-              className="px-6 py-3 bg-[#1f1712] text-paper text-xs font-bold uppercase tracking-widest rounded-full hover:bg-gold hover:text-white transition-all shadow-md self-start md:self-auto"
-            >
-              Consult M&E Engineers
-            </Link>
+            <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
+              <Link 
+                to="/engineering-products"
+                className="px-6 py-3 border border-[#1f1712]/20 text-[#1f1712] text-xs font-bold uppercase tracking-widest rounded-full hover:border-gold hover:text-gold transition-all"
+              >
+                View full details →
+              </Link>
+              <Link 
+                to="/contact?pillar=Engineering"
+                className="px-6 py-3 bg-[#1f1712] text-paper text-xs font-bold uppercase tracking-widest rounded-full hover:bg-gold hover:text-white transition-all shadow-md"
+              >
+                Consult M&amp;E Engineers
+              </Link>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
@@ -347,12 +355,20 @@ export default function Engineering() {
               </p>
             </div>
 
-            <Link 
-              to="/contact?pillar=Engineering"
-              className="px-8 py-4 bg-gold text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white hover:text-black transition-all shadow-lg shadow-gold/20 self-start md:self-auto flex items-center gap-2"
-            >
-              Consult IoT Specialist <ExternalLink className="w-4 h-4" />
-            </Link>
+            <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
+              <Link 
+                to="/smart-iot"
+                className="px-8 py-4 border border-white/20 text-paper text-xs font-bold uppercase tracking-widest rounded-full hover:border-gold hover:text-gold transition-all"
+              >
+                View full details →
+              </Link>
+              <Link 
+                to="/contact?pillar=Engineering"
+                className="px-8 py-4 bg-gold text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-white hover:text-black transition-all shadow-lg shadow-gold/20 flex items-center gap-2"
+              >
+                Consult IoT Specialist <ExternalLink className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
 
           {/* 4 Smart Automation Suites */}
@@ -369,14 +385,22 @@ export default function Engineering() {
                   Precision agriculture: automated irrigation, soil sensing, and climate control.
                 </p>
               </div>
-              <a 
-                href="https://www.blyten.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between pt-4 border-t border-white/10"
-              >
-                <span>Inquire Now</span> <span>→</span>
-              </a>
+              <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
+                <Link
+                  to="/smart-farming"
+                  className="text-xs uppercase font-bold tracking-widest text-paper hover:text-gold transition-colors flex items-center justify-between"
+                >
+                  <span>View full details</span> <span>→</span>
+                </Link>
+                <a 
+                  href="https://www.blyten.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between"
+                >
+                  <span>Inquire Now</span> <span>→</span>
+                </a>
+              </div>
             </div>
 
             {/* Smart Hotel */}
@@ -390,14 +414,22 @@ export default function Engineering() {
                   Guest experience automation: room controls, energy efficiency, and check-in integration.
                 </p>
               </div>
-              <a 
-                href="https://www.blyten.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between pt-4 border-t border-white/10"
-              >
-                <span>Inquire Now</span> <span>→</span>
-              </a>
+              <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
+                <Link
+                  to="/smart-iot"
+                  className="text-xs uppercase font-bold tracking-widest text-paper hover:text-gold transition-colors flex items-center justify-between"
+                >
+                  <span>View full details</span> <span>→</span>
+                </Link>
+                <a 
+                  href="https://www.blyten.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between"
+                >
+                  <span>Inquire Now</span> <span>→</span>
+                </a>
+              </div>
             </div>
 
             {/* Smart Home */}
@@ -411,14 +443,22 @@ export default function Engineering() {
                   Integrated residential automation: lighting, climate, security, and voice control.
                 </p>
               </div>
-              <a 
-                href="https://www.blyten.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between pt-4 border-t border-white/10"
-              >
-                <span>Inquire Now</span> <span>→</span>
-              </a>
+              <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
+                <Link
+                  to="/smart-home"
+                  className="text-xs uppercase font-bold tracking-widest text-paper hover:text-gold transition-colors flex items-center justify-between"
+                >
+                  <span>View full details</span> <span>→</span>
+                </Link>
+                <a 
+                  href="https://www.blyten.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between"
+                >
+                  <span>Inquire Now</span> <span>→</span>
+                </a>
+              </div>
             </div>
 
             {/* Smart Office */}
@@ -432,14 +472,22 @@ export default function Engineering() {
                   Intelligent workspaces: occupancy tracking, meeting room automation, and energy zoning.
                 </p>
               </div>
-              <a 
-                href="https://www.blyten.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between pt-4 border-t border-white/10"
-              >
-                <span>Inquire Now</span> <span>→</span>
-              </a>
+              <div className="pt-4 border-t border-white/10 flex flex-col gap-3">
+                <Link
+                  to="/smart-office"
+                  className="text-xs uppercase font-bold tracking-widest text-paper hover:text-gold transition-colors flex items-center justify-between"
+                >
+                  <span>View full details</span> <span>→</span>
+                </Link>
+                <a 
+                  href="https://www.blyten.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] uppercase font-bold tracking-widest text-gold hover:text-white transition-colors flex items-center justify-between"
+                >
+                  <span>Inquire Now</span> <span>→</span>
+                </a>
+              </div>
             </div>
 
           </div>
@@ -479,12 +527,20 @@ export default function Engineering() {
             </p>
           </div>
 
-          <Link 
-            to="/contact?pillar=Engineering"
-            className="px-6 py-3 bg-gold text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-[#1f1712] transition-all shadow-md self-start md:self-auto"
-          >
-            Request ICT Proposal
-          </Link>
+          <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <Link 
+              to="/network-it-products"
+              className="px-6 py-3 border border-[#1f1712]/20 text-[#1f1712] text-xs font-bold uppercase tracking-widest rounded-full hover:border-gold hover:text-gold transition-all"
+            >
+              View full details →
+            </Link>
+            <Link 
+              to="/contact?pillar=Engineering"
+              className="px-6 py-3 bg-gold text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-[#1f1712] transition-all shadow-md"
+            >
+              Request ICT Proposal
+            </Link>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -559,10 +615,10 @@ export default function Engineering() {
 
               <div className="flex flex-wrap gap-4">
                 <Link 
-                  to="/contact?pillar=Engineering"
+                  to="/software-development"
                   className="px-8 py-4 bg-[#1f1712] text-paper text-xs font-bold uppercase tracking-widest rounded-full hover:bg-gold hover:text-white transition-all shadow-md flex items-center gap-2"
                 >
-                  Consult Software Team <ArrowRight className="w-4 h-4" />
+                  View full details →
                 </Link>
                 <Link 
                   to="/contact?pillar=Engineering"
@@ -719,7 +775,16 @@ export default function Engineering() {
             ))}
           </div>
 
-          {/* Client Logos / Key Partners Strip */}
+          {/* Full Project References Link & Client Logos */}
+          <div className="flex justify-center mb-12">
+            <Link
+              to="/project-references"
+              className="px-8 py-4 border border-gold/40 text-gold text-xs font-bold uppercase tracking-widest rounded-full hover:bg-gold hover:text-white transition-all"
+            >
+              View full details →
+            </Link>
+          </div>
+
           <div className="text-center pt-12 border-t border-white/10">
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-gold block mb-6">
               Major Infrastructure & Industrial Clients

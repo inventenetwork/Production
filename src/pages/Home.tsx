@@ -29,7 +29,7 @@ export default function Home() {
       pillar: "Engineering Pillar",
       category: "Electrical / Control",
       desc: "Proprietary IoT platform delivering smart farming telemetry, home automation, and smart office controls.",
-      link: "/engineering#iot",
+      link: "/smart-iot",
       icon: <Cpu className="w-6 h-6 text-gold" />,
       badge: "Smart. Simplified."
     },
@@ -38,7 +38,7 @@ export default function Home() {
       pillar: "Education Pillar",
       category: "Experiential Youth Learning",
       desc: "Aerospace rocketry, satellite telemetry kits, robotics, and applied AI labs inspiring Malaysia's future engineers.",
-      link: "/education#stem",
+      link: "/stem-education",
       icon: <Rocket className="w-6 h-6 text-gold" />,
       badge: "K-12 & Tertiary"
     },
@@ -47,7 +47,7 @@ export default function Home() {
       pillar: "Education Pillar",
       category: "HRD Corp Certified Program",
       desc: "Accredited andragogy, TNA, and high-impact facilitation workshops led by an HRD Corp Certified Trainer.",
-      link: "/education#ttt",
+      link: "/train-the-trainer",
       icon: <Award className="w-6 h-6 text-gold" />,
       badge: "HRD Corp Claimable"
     },
@@ -56,7 +56,7 @@ export default function Home() {
       pillar: "Engineering Pillar",
       category: "Web & App Development",
       desc: "Full-stack software development for mobile, web, and custom APIs tailored to enterprise needs.",
-      link: "/engineering#software",
+      link: "/software-development",
       icon: <Code2 className="w-6 h-6 text-gold" />,
       badge: "Digital Platform"
     }

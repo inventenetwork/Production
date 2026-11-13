@@ -8,10 +8,18 @@ import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'r
 import { AnimatePresence, motion } from 'motion/react';
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   React.useEffect(() => {
+    if (hash) {
+      const targetId = hash.slice(1);
+      const el = document.getElementById(targetId) || (targetId === 'smart-iot' ? document.getElementById('iot') : null);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+        return;
+      }
+    }
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathname, hash]);
   return null;
 }
 
@@ -42,6 +50,8 @@ import ProfessionalServices from './pages/ProfessionalServices';
 import ProjectReferences from './pages/ProjectReferences';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import SoftwareDevelopment from './pages/SoftwareDevelopment';
+import NotFound from './pages/NotFound';
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -74,9 +84,11 @@ function AnimatedRoutes() {
           <Route path="/engineering-products" element={<EngineeringProducts />} />
           <Route path="/network-it-products" element={<NetworkITProducts />} />
           <Route path="/professional-services" element={<ProfessionalServices />} />
+          <Route path="/software-development" element={<SoftwareDevelopment />} />
           <Route path="/project-references" element={<ProjectReferences />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.main>
     </AnimatePresence>

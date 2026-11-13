@@ -298,10 +298,16 @@ export default function Education() {
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <div className="px-4 py-2 rounded-xl bg-gold/10 border border-gold/30 text-xs font-bold text-[#8a6828] uppercase tracking-wider flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-gold" /> HRD Corp Claimable
               </div>
+              <Link 
+                to="/train-the-trainer" 
+                className="px-6 py-3 border border-[#1f1712]/20 text-[#1f1712] text-xs font-bold uppercase tracking-widest rounded-full hover:border-gold hover:text-gold transition-all"
+              >
+                View full details →
+              </Link>
               <Link 
                 to="/contact?pillar=Education" 
                 className="px-6 py-3 bg-[#1f1712] text-paper text-xs font-bold uppercase tracking-widest rounded-full hover:bg-gold hover:text-white transition-all shadow-md"
@@ -389,12 +395,20 @@ export default function Education() {
             </p>
           </div>
 
-          <Link 
-            to="/contact?pillar=Education" 
-            className="px-6 py-3 bg-gold text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-[#1f1712] transition-all shadow-md self-start md:self-auto"
-          >
-            Request STEM Kit Catalog
-          </Link>
+          <div className="flex flex-wrap items-center gap-3 self-start md:self-auto">
+            <Link 
+              to="/stem-education" 
+              className="px-6 py-3 border border-[#1f1712]/20 text-[#1f1712] text-xs font-bold uppercase tracking-widest rounded-full hover:border-gold hover:text-gold transition-all"
+            >
+              View full details →
+            </Link>
+            <Link 
+              to="/contact?pillar=Education" 
+              className="px-6 py-3 bg-gold text-white text-xs font-bold uppercase tracking-widest rounded-full hover:bg-[#1f1712] transition-all shadow-md"
+            >
+              Request STEM Kit Catalog
+            </Link>
+          </div>
         </div>
 
         {/* 4 STEAM Focus Tracks */}
@@ -561,7 +575,16 @@ export default function Education() {
             ))}
           </div>
 
-          {/* Verified Partner Institutions */}
+          {/* View Full Portfolio & Partner Institutions */}
+          <div className="flex justify-center mb-12">
+            <Link
+              to="/project-references"
+              className="px-8 py-4 border border-gold/40 text-gold text-xs font-bold uppercase tracking-widest rounded-full hover:bg-gold hover:text-white transition-all"
+            >
+              View full details →
+            </Link>
+          </div>
+
           <div className="text-center pt-12 border-t border-white/10">
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-gold block mb-6">
               Participating Institutions & Partners

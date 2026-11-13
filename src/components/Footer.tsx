@@ -114,6 +114,14 @@ export default function Footer() {
           <div>
             © 2020 – 2026 Inventé Network Sdn. Bhd. All rights reserved.
           </div>
+          <div className="flex items-center gap-6">
+            <Link to="/privacy-policy" className="hover:text-gold transition-colors">
+              Privacy Policy
+            </Link>
+            <Link to="/terms-conditions" className="hover:text-gold transition-colors">
+              Terms &amp; Conditions
+            </Link>
+          </div>
           <div className="text-gold font-bold">
             ideas.engineered.
           </div>
